@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SEDONA</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./img/favicon.ico" sizes="32x32">
+  <meta name="viewport" content="width=device-width, inicial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="site-navigation">
+        <a href="info.html">Информация</a>
+        <a href="galery.html">Фото и видео</a>
+        <a class="main-logo"><img src="./img/logo.svg" width="138" height="70" alt="Логотип сайта Седона"></a>
+        <a href="https://goo.gl/maps/fPumDPP5dwfQrGn96">Карта штата</a>
+        <a href="catalog.html">Гостиницы</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcom">
+        <img class="welcom-word" src="./img/welcom.png">
+        <img class="tothetext" src="./img/TotheText.png">
+        <img class="sedona-text" src="./img/SedonaText.png">
+      </section>
+      <div class="welcom-bottom-text">
+        <p class="welcom-slogan-city">Седона — небольшой городок в Аризоне,<br>
+          заслуживающий большего!</p>
+        <p class="welcom-slogan-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+
+      <section class="city">
+        <div class="city-text">
+          <h2>Настоящий<br> городок</h2>
+          <p class="number">— №1 —</p>
+          <p class="sedona-life">Седона — не аттракцион для туристов, там<br>
+            течёт своя жизнь</p>
+        </div>
+        <img src="./img/city_sedona.png" alt="Фото городка Седоны">
+      </section>
+
+      <section class="places">
+        <ul class="places-list">
+          <li>
+            <img class="house" src="./img/icon-1.png">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+          </li>
+          <li>
+            <img class="food" src="./img/icon-3.png">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <img class="souvenirs" src="./img/icon-2.png">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного<br> производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="brige">
+        <img src="./img/canion.png" alt="Мост дъявола">
+        <div class="brige-text">
+          <h2>Там есть<br> Мост дьявола</h2>
+          <p class="number-2">— №2 —</p>
+          <p class="brave">Да, по нему можно пройти! Если конечно<br>
+            вы осмелитесь</p>
+        </div>
+      </section>
+
+      <section class="advantage">
+        <ul class="advantage-list">
+          <li>
+            <h2>небольшая<br>
+              площадь</h2>
+            <p class="numbering">— №3 —</p>
+            <p class="advantage-text">все достопримечательности<br>
+              находятся очень близко</p>
+          </li>
+          <li>
+            <h2>красивая<br>
+              дорога</h2>
+            <p class="numbering">— №4 —</p>
+            <p class="advantage-text">ехать в седону из лас-вегаса совсем<br>
+              не скучно!</p>
+          </li>
+          <li>
+            <h2>мало<br>
+              туристов</h2>
+            <p class="numbering">— №5 —</p>
+            <p class="advantage-text">большинство едет в гранд каньон<br>
+              и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="form-container">
+        <section class="form">
+          <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="form-par">
+            Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в седоне
+          </p>
+          <button class="button button-main">Поиск гостиницы в седоне</button>
+        </section>
+      </div>
+
+      <form class="popup" action="https://sedonacatalog.com/" method="get">
+        <div class="popup-container">
+          <div class="popup-block">
+            <label for="enter">дата заезда:</label>
+            <div class="icon-field-calendar">
+              <input class="input input-long" type="text" id="enter" value="" placeholder="" required>
+              <span class="icon-calendar">
+                <a href="#"><img src="./img/calendar.png"></a>
+              </span>
+            </div>
+          </div>
+          <div class="popup-block exit">
+            <label for="exit">дата выезда:</label>
+            <div class="icon-field-calendar">
+              <input class="input input-long" type="text" id="exit" value="">
+              <span class="icon-calendar">
+                <a href="#"><img src="./img/calendar.png"></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="adults-children">
+            <div class="popup-block adults-block">
+              <label for="adults">Взрослые:</label>
+              <div class="icon-field-plus-minus">
+                <input class="input input-short" type="text" id="adults" value="2">
+                <span class="plus">
+                  <img src="./img/Union.png">
+                </span>
+                <span class="minus">
+                  <img src="./img/МИНУС/Rectangle.png">
+                </span>
+              </div>
+            </div>
+            <div class="popup-block children-block">
+              <label for="children">Дети:</label>
+              <div class="icon-field-plus-minus">
+                <input class="input input-short" type="text" id="children" value="0">
+                <span class="minus">
+                  <img src="./img/МИНУС/Rectangle.png">
+                </span>
+                <span class="plus">
+                  <img src="./img/Union.png">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <button class="button button-found" type="button">НАЙТИ</button>
+        </div>
+      </form>
+
+      <iframe class="main-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657476916!2d-111.83015810420495!3d34.85444381570011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sil!4v1665464162831!5m2!1sru!2sil"
+        width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-phone">
+        <p>#visitSEDONA</p>
+        <a class="phone" href="tel:+972524479863">+972 52 447-98-63</a>
+      </section>
+      <section class="footer-social">
+        <ul class="social-button">
+          <li class="twitt">
+            <a class="active active-twitt" href="#"><img src="./img/twitter.png" width="17" height="17"></a>
+          </li>
+          <li class="fb">
+            <a class="active active-fb" href="#"><img src="./img/fb-icon.png" width="12" height="22"></a>
+          </li>
+          <li class="youtube">
+            <a class="active active-youtube" href="#"><img src="./img/youtube.png" width="20" height="16"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <a href="#">
+          <p class="website">Website</p>
+        </a>
+      </section>
+    </footer>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
