@@ -11,6 +11,7 @@ const storageExit = localStorage.getItem('exit');
 const storageAdults = localStorage.getItem('adults');
 const storageChildren = localStorage.getItem('children');
 let isStorageSupport = true;
+
 enter.addEventListener('focus', function (evt) {
   enter.classList.add('focused');
   enter.value = "";
@@ -30,6 +31,7 @@ try {
 
 buttonSearch.addEventListener('click', function (evt) {
   popup.classList.toggle('popup-show');
+  evt.stopPropagation();
   if (storageEnter) {
     enter.placeholder = storageEnter;
     exit.focus();
@@ -52,6 +54,12 @@ buttonSearch.addEventListener('click', function (evt) {
     children.value = storageChildren;
   } else {
     children.focus();
+  }
+});
+
+window.addEventListener('click', function () {
+  if (popup.classList.contains('popup-show')) {
+    popup.classList.toggle('popup-show');
   }
 });
 
